@@ -18,6 +18,7 @@
     font-weight: 500;
     line-height: 140%;
 }
+.navbar-mobile .flex-head .h6-custom{font-size: 15px;}
 .hamburger div {
   background-color: #000000;
   border-radius: 1px;

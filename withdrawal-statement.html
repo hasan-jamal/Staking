@@ -34,7 +34,7 @@
                 <div class="d-flex align-items-center navbarUser">
                     <img src="./images/img-user.jpg" alt="user" class="user">
                 </div>
-                <h6>Profile</h6>
+                <h6 class="h6-custom">Withdrawal Statement</h6>
                 <div class="hamburger" id="hamburger" onclick="toggleSidenav();">
                     <img src="./images/green-lines.svg" alt="green-lines">
                 </div>
@@ -120,83 +120,66 @@
 
             </section>
             <section class="section-content">
-                <div class="home-profile">
-                    <h1>Welcome to your profile</h1>
-                    <form action="" class="form-save">
-                        <p>Edit your Personal Details</p>
-                        <div class="form-group-gap">
-                            <div class="form-group">
-                                <label for="name">Your Name</label>
-                                <input type="text" id="name" name="name" class="input-profile form-control"
-                                    placeholder="Full Name">
-                            </div>
-                            <div class="form-group">
-                                <label for="username">Your username</label>
-                                <input type="text" id="username" name="username" class="input-profile form-control"
-                                    placeholder="username">
-                            </div>
-                            <div class="d-flex fx-form-group">
-                                <div class="form-group form-gender">
-                                    <label for="gender">Gender</label>
-                                    <div class="dropFilter dropFilter-st">
-                                        <div class="fx-dropFilter d-flex justify-content-between align-items-center">
-                                            <input type="text" class="" name="gender" id="gender" placeholder="Male"
-                                                readonly="">
-                                            <i class="fal fa-chevron-down"></i>
-                                        </div>
-                                        <div class="dropdown-filter">
-                                            <div class="fx-dropdown-filter">
-                                                <a>Female</a>
-                                                <a>Male</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                <div class="home-team home-withdrawal-statement">
+                    <h1>Withdrawal Statement</h1>
+                    <h6>Your recent withdrawals</h6>
+                    <div class="d-flex flex-column fx-withdrawal-statement">
+                        <div class="box-team">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="box-team-txt">
+                                    <p>Member Name</p>
+                                    <span class="span-grey">23th May, 2023</span>
                                 </div>
-                                <div class="form-group form-phone">
-                                    <label for="mobile_code">Phone Number</label>
-                                    <input type="text" id="mobile_code" class="input-profile form-control"
-                                        placeholder="Phone Number" name="name">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Your Email</label>
-                                <input type="email" class="input-profile form-control" placeholder="Someone@Domain.com">
-                            </div>
-                            <div class="form-group">
-                                <label for="ReferralCode">Your Referral Code</label>
-                                <div class="d-flex align-items-center justify-content-between box-profile">
-                                    <input type="text" class="form-control" placeholder="H37DHU8756X">
-                                    <img src="./images/copy-icon.svg" alt="">
-                                </div>
+                                <span>1.05</span>
                             </div>
                         </div>
-                        <p>Reset Password</p>
-                        <div class="form-group-gap">
-                            <div class="form-group">
-                                <label for="CurrentPassword">Current Password</label>
-                                <input type="password" id="CurrentPassword" name="currentPassword"
-                                    class="input-profile form-control" placeholder="*****************">
-                            </div>
-                            <div class="form-group">
-                                <label for="newPassword">Enter New Password</label>
-                                <input type="password" id="newPassword" name="newPassword"
-                                    class="input-profile form-control" placeholder="*****************">
-                            </div>
-                            <div class="form-group">
-                                <label for="confirmPassword">Confirm Enter New Password</label>
-                                <input type="password" id="confirmPassword" name="confirmPassword"
-                                    class="input-profile form-control" placeholder="*****************">
+                        <div class="box-team">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="box-team-txt">
+                                    <p>Member Name</p>
+                                    <span class="span-grey">23th May, 2023</span>
+                                </div>
+                                <span>1.05</span>
                             </div>
                         </div>
-                        <button>Save Changes</button>
-                    </form>
-                    <form action="" class="form-delete">
-                        <p>Delete Account</p>
-                        <span>Deleting your account will remove you account form the website permanently and you will
-                            lose all your data.
-                            This is NOT reversable.</span>
-                        <button>Delete Account</button>
-                    </form>
+                        <div class="box-team">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="box-team-txt">
+                                    <p>Member Name</p>
+                                    <span class="span-grey">23th May, 2023</span>
+                                </div>
+                                <span>1.05</span>
+                            </div>
+                        </div>
+                        <div class="box-team">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="box-team-txt">
+                                    <p>Member Name</p>
+                                    <span class="span-grey">23th May, 2023</span>
+                                </div>
+                                <span>1.05</span>
+                            </div>
+                        </div>
+                        <div class="box-team">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="box-team-txt">
+                                    <p>Member Name</p>
+                                    <span class="span-grey">23th May, 2023</span>
+                                </div>
+                                <span>1.05</span>
+                            </div>
+                        </div>
+
+                        <div class="box-team">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="box-team-txt">
+                                    <p>Member Name</p>
+                                    <span class="span-grey">23th May, 2023</span>
+                                </div>
+                                <span>1.05</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -221,28 +204,6 @@
         $("#mobile_code").intlTelInput({
             initialCountry: "in",
             separateDialCode: true,
-        });
-    </script>
-    <script>
-        $(document).ready(function () {
-            $(".dropFilter .fx-dropFilter").click(function (e) {
-                e.stopPropagation();
-                var dropdownContent = $(this).siblings(".dropdown-filter");
-                $(".dropdown-filter").not(dropdownContent).hide();
-                dropdownContent.toggle();
-            });
-
-            $(".dropdown-filter a").click(function (e) {
-                e.stopPropagation();
-                var selectedOption = $(this).text();
-                var dropdown = $(this).closest(".dropFilter");
-                dropdown.find("input").val(selectedOption);
-                dropdown.find(".dropdown-filter").hide();
-            });
-
-            $(document).click(function () {
-                $(".dropdown-filter").hide();
-            });
         });
     </script>
 
