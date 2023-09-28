@@ -71,7 +71,6 @@
     font-weight: 400;
     line-height: 130%;
 }
-
 .section-auth form .fx-terms label:before {
   content:'';
   -webkit-appearance: none;
@@ -88,7 +87,6 @@
   margin-right: 13px;
   background-color: transparent;
 }
-
 .section-auth form .fx-terms input:checked + label:after {
   content: '';
   display: block;

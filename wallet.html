@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staking</title>
+    <link rel="icon" href="./images/Logo-2.gif">
+    <!---Style CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/auth.css">
+    <!---font awesome 5.12 Light-->
+    <link rel="stylesheet" href="./icons/all.min.css">
+    <link rel="stylesheet" href="./icons/light.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!---Bootstrap 5 CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="main-pages">
+        <div class="navbar-mobile">
+            <div class="cover" onclick="toggleSidenav();"></div>
+            <div class="d-flex align-items-center justify-content-between flex-head">
+                <div class="d-flex align-items-center navbarUser">
+                    <img src="./images/img-user.jpg" alt="user" class="user">
+                </div>
+                <h6>Your Wallet</h6>
+                <div class="hamburger" id="hamburger" onclick="toggleSidenav();">
+                    <img src="./images/green-lines.svg" alt="green-lines">
+                </div>
+            </div>
+            <nav class="nav-mobile">
+                <div class="links">
+                    <img src="./images/Logo-2.gif" alt="Logo" class="logo">
+                    <a href="./home.html">
+                        <img src="./images/home-icon.svg" alt="icon">
+                        <span>Home</span>
+                    </a>
+                    <a href="./profile.html">
+                        <img src="./images/profile-icon.svg" alt="icon">
+                        <span>profile</span>
+                    </a>
+                    <a href="./wallet.html">
+                        <img src="./images/wallet-icon.svg" alt="icon">
+                        <span>wallet</span>
+                    </a>
+                    <a href="./statistics.html">
+                        <img src="./images/statistics-icon.svg" alt="icon">
+                        <span>Statistics</span>
+                    </a>
+                    <a href="./team.html">
+                        <img src="./images/team-icon.svg" alt="icon">
+                        <span>team</span>
+                    </a>
+                    <a href="">
+                        <img src="./images/logout-icon.svg" alt="icon">
+                        <span>Log Out</span>
+                    </a>
+            </nav>
+        </div>
+        <div class="main-fx">
+            <section class="sideSection">
+                <img src="./images/Logo-2.gif" alt="Logo" class="logo">
+                <h4>TOL COIN</h4>
+                <ul>
+                    <li>
+                        <a href="./home.html">
+                            <img src="./images/home-icon.svg" alt="icon">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./profile.html">
+                            <img src="./images/profile-icon.svg" alt="icon">
+                            <span>profile</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./wallet.html">
+                            <img src="./images/wallet-icon.svg" alt="icon">
+                            <span>wallet</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./statistics.html">
+                            <img src="./images/statistics-icon.svg" alt="icon">
+                            <span>Statistics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./team.html">
+                            <img src="./images/team-icon.svg" alt="icon">
+                            <span>team</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./images/logout-icon.svg" alt="icon">
+                            <span>Log Out</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center justify-content-center links-sideSection">
+                    <a href=""><img src="./images/facebook.svg" alt="facebook"></a>
+                    <a href=""><img src="./images/twitter.svg" alt="twiter"></a>
+                    <a href=""><img src="./images/instgram.svg" alt="instgram"></a>
+                    <a href=""><img src="./images/linkedIn.svg" alt="linkedIn"></a>
+                    <a href=""><img src="./images/telgram.svg" alt="telgram"></a>
+                </div>
+            </section>
+            <section class="section-content">
+                <div class="home-page wallet-page">
+                    <h1 class="h1-head">Your Wallet</h1>
+                    <div class="wallet-page-values">
+                        <div class="box-values">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="box-values-txt">
+                                    <p class="style-font2">TOL Available</p>
+                                    <span class="style-font1">100</span>
+                                </div>
+                                <div class="box-values-txt box-values-txt2">
+                                    <p class="style-font2">Staked Amount</p>
+                                    <span class="style-font1">60</span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div class="box-values-txt ">
+                                    <p class="style-font2">My Team</p>
+                                    <span class="style-font1">100</span>
+                                </div>
+                                <div class="box-values-txt  box-values-txt2">
+                                    <p class="style-font2">My Rewards</p>
+                                    <span class="style-font1">29.94</span>
+                                </div>
+                            </div>
+                        </div>
+                        <h4 class="style-font1 text-center">Wallet Value</h4>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="box-values-txt">
+                                <p class="style-font2">Wallet value (USD)</p>
+                                <span class="style-font1">100</span>
+                            </div>
+                            <div class="box-values-txt box-values-txt2">
+                                <p class="style-font2">Staked Amount</p>
+                                <span class="style-font1">60</span>
+                            </div>
+                        </div>
+                        <div class="wallet-page-box">
+                            <div class="form-group">
+                                <label for=""><img src="./images/img-hash.svg" alt=""></label>
+                                <input type="text" class="form-control"
+                                    placeholder="0x1991cd99d3415dae297f0275a3bed103b02f8840a679c495be4b2d6e37d1201jjk2d6e37d9c495be4b2d6">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between fx-wallet-address">
+                                <p class="style-font2">Your Wallet Address</p>
+                                <div class=" d-flex fx-wallet-icons">
+                                    <img src="./images/shareIcon.svg" alt="shareIcon">
+                                    <img src="./images/copy-icon.svg" alt="copy-icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" align-items-center wallet-currency wallet-currency-dc">
+                            <div class="d-flex align-items-center justify-content-between wallet-currency-back">
+                                <div class="d-flex align-items-center wallet-currency-fx">
+                                    <img src="./images/TOL.svg" alt="TOL">
+                                    <span>0.00</span>
+                                </div>
+                                <span>TOL</span>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between wallet-currency-back">
+                                <div class="d-flex align-items-center wallet-currency-fx">
+                                    <img src="./images/TOL.svg" alt="TOL">
+                                    <span>0.00</span>
+                                </div>
+                                <span>TOL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" align-items-center wallet-currency wallet-currency-mb">
+                        <div class="d-flex align-items-center justify-content-between wallet-currency-back">
+                            <div class="d-flex align-items-center wallet-currency-fx">
+                                <img src="./images/TOL.svg" alt="TOL">
+                                <span>0.00</span>
+                            </div>
+                            <span>TOL</span>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between wallet-currency-back">
+                            <div class="d-flex align-items-center wallet-currency-fx">
+                                <img src="./images/TOL.svg" alt="TOL">
+                                <span>0.00</span>
+                            </div>
+                            <span>TOL</span>
+                        </div>
+                    </div>
+                    <div class=" align-items-center fx-btns fx-btns-dc">
+                        <button class="btn-border" data-bs-toggle="modal" data-bs-target="#modalWthdraw">
+                            <span>Withdraw</span>
+                            <img src="./images/arrow-green-top.svg" alt="arrow">
+                        </button>
+                        <button class="btn-green" data-bs-toggle="modal" data-bs-target="#modalDeposit">
+                            <span>Deposit</span>
+                            <img src="./images/arrow-black-bottom.svg" alt="arrow">
+                        </button>
+                    </div>
+                    <div class=" align-items-center fx-btns fx-btns-mb">
+                        <button class="btn-border" onclick="openSideWithdraw();">
+                            <span>Withdraw</span>
+                            <img src="./images/arrow-green-top.svg" alt="arrow">
+                        </button>
+                        <button class="btn-green" onclick="openSideDeposit();">
+                            <span>Deposit</span>
+                            <img src="./images/arrow-black-bottom.svg" alt="arrow">
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="side-withdraw" id="side-withdraw">
+                <div class="d-flex align-items-center  justify-content-between side-content-withdraw">
+                    <img src="./images/back-back.svg" alt="back" onclick="closeSideWithdraw();">
+                    <h2>Withdraw</h2>
+                    <div onclick="toggleSidenav();">
+                        <img src="./images/green-lines.svg" alt="green-lines">
+                    </div>
+                </div>
+                <form action="">
+                    <div>
+                        <div class="form-group">
+                            <label for="">Address</label>
+                            <div class="box-side">
+                                <input type="text" name="" id="">
+                                <img src="./images/scan-green.svg" alt="scan">
+                            </div>
+                        </div>
+                        <div class="form-group form-group-top">
+                            <label for="">Amount</label>
+                            <div class="box-side">
+                                <input type="text" name="" id="">
+                                <span>TOL</span>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center fx-side-withdraw">
+                            <p>Available for withdrawal</p>
+                            <span>0.00 TOL</span>
+                        </div>
+                    </div>
+                    <button class="btn-submit">Submit</button>
+                </form>
+
+
+
+            </section>
+            <section class="side-withdraw" id="side-deposit">
+                <div class="d-flex align-items-center  justify-content-between side-content-withdraw">
+                    <img src="./images/back-back.svg" alt="back" onclick="closeSideDeposit();">
+                    <h2>Deposit TOL</h2>
+                    <div onclick="toggleSidenav();">
+                        <img src="./images/green-lines.svg" alt="green-lines">
+                    </div>
+                </div>
+                <div class="content-deposit">
+                    <img src="./images/qr.svg" alt="qr" class="qr-code">
+                    <p>Your Wallet Address</p>
+                    <div class="d-flex align-items-center fx-group-deposit">
+                        <img src="./images/img-hash.svg" alt="img-hash" class="img-hash">
+                        <input type="text" class="" placeholder="0x3jf74wk9846ghksue654nuignt7ndkw7fgdkdugdjflljf8...">
+                        <img src="./images/copy-icon.svg" alt="">
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <p>Minimum deposit</p>
+                        <span>0.1 TOL</span>
+                    </div>
+                    <p class="last-statment">
+                        TOLCoins can be purchased from the following <br> <a href="">exchange</a>.
+                    </p>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <!-- Modal wthdraw-->
+    <div class="modal fade modal-wthdraw" id="modalWthdraw" tabindex="-1" aria-labelledby="modalWthdrawLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-wthdraw-content">
+                        <img src="./images/close-icon.svg" data-bs-dismiss="modal" alt="close-icon" class="close-icon">
+                        <h1>Withdraw</h1>
+                        <p>add receiver address and amount to send ToLcoin</p>
+                        <form action="">
+                            <div class="form-group form-group-bottom">
+                                <label for="">Receiver Address</label>
+                                <div class="box-input">
+                                    <input type="text" class="form-control">
+                                    <img src="./images/scan.svg" alt="scan">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Amount</label>
+                                <input type="number" class="form-control input-des" name="" id="" placeholder="00.00">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between fx-modal-wthdraw">
+                                <span class="span-white">Available for withdrawal</span>
+                                <span class="span-green">1.00 TOL</span>
+                            </div>
+                            <button class="btn-green-style">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal wthdraw-->
+    <div class="modal fade modal-wthdraw" id="modalDeposit" tabindex="-1" aria-labelledby="modalDepositLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-wthdraw-content">
+                        <img src="./images/close-icon.svg" data-bs-dismiss="modal" alt="close-icon" class="close-icon">
+                        <h1>Deposit</h1>
+                        <p>Scan or copy your wallet address</p>
+                        <div class="content-deposit">
+                            <img src="./images/qr.svg" alt="qr" class="qr-code">
+                            <p>Your Wallet Address</p>
+                            <div class="d-flex align-items-center fx-group-deposit">
+                                <img src="./images/img-hash.svg" alt="img-hash" class="img-hash">
+                                <input type="text" class=""
+                                    placeholder="0x3jf74wk9846ghksue654nuignt7ndkw7fgdkdugdjflljf8...">
+                                <img src="./images/copy-icon.svg" alt="">
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <p>Minimum deposit</p>
+                                <span>0.1 TOL</span>
+                            </div>
+                            <p class="last-statment">
+                                TOLCoins can be purchased from the following <br> <a href="">exchange</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap 5 JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- icons JS -->
+    <script src="./icons/all.min.js"></script>
+    <script src="./icons/light.min.js"></script>
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/public.js"></script>
+    <script>
+        function openSideWithdraw() {
+            $('#side-withdraw').show();
+            $("html").css("overflow", "hidden");
+        }
+        function closeSideWithdraw() {
+            $('#side-withdraw').hide();
+            $("html").css("overflow", "auto");
+        }
+        function openSideDeposit() {
+            $('#side-deposit').show();
+            $("html").css("overflow", "hidden");
+        }
+        function closeSideDeposit() {
+            $('#side-deposit').hide();
+            $("html").css("overflow", "auto");
+        }
+    </script>
+
+</html>
