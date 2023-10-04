@@ -27,6 +27,32 @@
     flex-direction: column;
     gap: 25px;
 }
+.section-auth form .fx-input .box-pass{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 16px 4px 16px;
+    height: 56px;
+    background: transparent;
+    border-radius:10px;
+    border: 1px solid #fff;
+    color: var(--material-theme-white, #FFF);
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+.section-auth form .fx-input .box-pass img{cursor: pointer;transition: 0.4s;}
+.section-auth form .fx-input .box-pass img:hover{transform: scale(1.2);}
+.section-auth form .fx-input .box-pass input{
+    padding: 0px;
+    border: none;
+}
+.section-auth form .fx-input .box-pass input:focus-visible{
+    box-shadow: none;
+    border: none;
+}
 .section-auth form .fx-input input{
     padding: 4px 0px 4px 16px;
     height: 56px;
